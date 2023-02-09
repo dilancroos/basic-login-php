@@ -25,7 +25,7 @@ session_start();
 
 		<header>
 			<nav>
-				<ul class="menu-member">
+				<ul class="right hide-on-med-and-down">
 					<?php
 					if (isset($_SESSION['userid'])) {
 					 	?>
@@ -65,6 +65,7 @@ session_start();
 						<div class="row" style="min-height: 97px;">
 							
 						</div>
+
 						<h4 >LOGIN</h4>
 						<form action="includes/login.inc.php" method="post">
 							<input type="text" name="uid" placeholder="Username">
@@ -72,6 +73,7 @@ session_start();
 							<br>
 							<button type="submit" name="submit" class="btn waves-effect waves-light"><i class="mdi-content-send right"></i>LOGIN</button>
 						</form>
+
 						<div class="row">
 							
 						</div>
