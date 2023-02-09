@@ -10,7 +10,7 @@ session_start();
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Page Title</title>
+		<title>OOP Login System</title>
 
 		<!-- Bootstrap CSS -->
 		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
@@ -45,8 +45,8 @@ session_start();
 		</header>
 		
 		<section class="container">
-			<div class="col s4">
-				<div class="index-login-signup">
+			<div class="container">
+				<div class="container col s4">
 					<h4>SIGN UP</h4>
 					<p>Don't have an account? then sign up here!</p>
 					<form action="includes/signup.inc.php" method="post">
@@ -55,16 +55,17 @@ session_start();
 						<input type="password" name="pwdrepeat" placeholder="Repeat Password">
 						<input type="text" name="email" placeholder="E-mail">
 						<br>
-						<button type="submit" name="submit">SIGN UP</button>
+						<button type="submit" name="submit" class="btn waves-effect waves-light"><i class="mdi-content-send right"></i>SIGN UP</button>
 					</form>
 				</div>
-				<div class="index-login-login">
+
+				<div class="container col s4">
 					<h4>LOGIN</h4>
 					<form action="includes/login.inc.php" method="post">
 						<input type="text" name="uid" placeholder="Username">
 						<input type="password" name="pwd" placeholder="Password">
 						<br>
-						<button type="submit" name="submit">LOGIN</button>
+						<button type="submit" name="submit" class="btn waves-effect waves-light"><i class="mdi-content-send right"></i>LOGIN</button>
 					</form>
 				</div>
 			</div>
