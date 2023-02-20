@@ -5,8 +5,11 @@ session_start();
  ?>
 
 <!DOCTYPE html>
+
 <html lang="en">
+
 	<head>
+
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,14 +20,14 @@ session_start();
 		<!-- Compiled and minified CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 		
-		
-		
-		
 	</head>
+
 	<body>
 
 		<header>
+
 			<nav>
+
 				<ul class="right hide-on-med-and-down">
 					<?php
 					if (isset($_SESSION['userid'])) {
@@ -41,15 +44,22 @@ session_start();
 					 	<?php
 					 } ?>
 				</ul>
+
 			</nav>
+
 		</header>
 		
 		<section class="container">
+
 			<div class="row">
+
 				<div class="center-align">
+
 					<div class="container col s6">
+
 						<h4>SIGN UP</h4>
 						<p>Don't have an account? then sign up here!</p>
+
 						<form action="includes/signup.inc.php" method="post">
 							<input type="text" name="uid" placeholder="Username">
 							<input type="password" name="pwd" placeholder="Password">
@@ -58,28 +68,39 @@ session_start();
 							<br>
 							<button type="submit" name="submit" class="btn waves-effect waves-light"><i class="mdi-content-send right"></i>SIGN UP</button>
 						</form>
+
 					</div>
+
 				</div>
+
 				<div class="center-align">
+
 					<div class="container col s6" >
+
 						<div class="row" style="min-height: 97px;">
 							
 						</div>
 
 						<h4 >LOGIN</h4>
 						<form action="includes/login.inc.php" method="post">
+
 							<input type="text" name="uid" placeholder="Username">
 							<input type="password" name="pwd" placeholder="Password">
 							<br>
+
 							<button type="submit" name="submit" class="btn waves-effect waves-light"><i class="mdi-content-send right"></i>LOGIN</button>
 						</form>
 
 						<div class="row">
 							
 						</div>
+
 					</div>
+
 				</div>
+
 			</div>
+
 		</section>
 
 
@@ -90,5 +111,7 @@ session_start();
 		<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> -->
 		<!-- Compiled and minified JavaScript -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
 	</body>
+	
 </html>
